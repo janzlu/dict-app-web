@@ -40,9 +40,9 @@ const FeaturesBento = () => {
               <path strokeLinecap="round" strokeLinejoin="round" d="m10.5 21 5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 0 1 6-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 0 1-3.827-5.802" />
             </svg>
             <div className="mt-16">
-              <h3 className="text-2xl font-bold mb-3 text-white">即点即译，生词无感入库</h3>
+              <h3 className="text-2xl font-bold mb-3 text-white">瞬间闪译，告别排版错乱</h3>
               <p className="text-white/60 leading-relaxed max-w-md">
-                无论多长的中英混排文章，或是工作中遇到的晦涩术语，在这个极轻的悬浮窗里查过之后，如果是生词将<strong className="text-white">全自动悄悄进入你的个人词库</strong>。曾经查过的熟词也能瞬时调出记录，将查阅、翻译与捕获无缝合一。
+                遇到长难句或专业文章？只需轻轻选中，无论有多少乱七八糟的换行符，它都能智能帮你铺平并瞬间翻译。而且它非常聪明：只翻译外语，绝不打乱纯中文文档！
               </p>
             </div>
           </div>
@@ -62,9 +62,9 @@ const FeaturesBento = () => {
               <path strokeLinecap="round" strokeLinejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125" />
             </svg>
             <div className="mt-16">
-              <h3 className="text-xl font-bold mb-3 text-white">永不断网的翻译体系</h3>
+              <h3 className="text-xl font-bold mb-3 text-white">永不断网的翻译体验</h3>
               <p className="text-white/60 leading-relaxed text-sm">
-                内建了脱机可用的大型生词库。即便遇到国内偶尔连不上翻译服务器的情况，底层逻辑也会自动为你无感切换到备用节点，拒绝报错弹窗。
+                内置了脱机可用的大型词库。哪怕你在火车上遇到网络极差、连不上翻译接口的情况，它也会自动无感切换到本地备用模式。拒绝任何烦人的报错弹窗。
               </p>
             </div>
           </div>
@@ -84,9 +84,9 @@ const FeaturesBento = () => {
               <path strokeLinecap="round" strokeLinejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
             </svg>
             <div className="mt-16">
-              <h3 className="text-xl font-bold mb-3 text-white">完全免费的多端同步</h3>
+              <h3 className="text-xl font-bold mb-3 text-white">全新极简 UI 与品牌升级</h3>
               <p className="text-white/60 leading-relaxed text-sm">
-                不再为云同步支付月费。你只需使用自己原有的 iCloud 或是 OneDrive 目录，所有单词本数据就会在你的所有设备间自动融合防丢。
+                全面启用了最新的紫电光晕标识（Lumina 寓意微光与认知），支持高度流畅的暗黑模式，并彻底修复了此前干扰交互的光源层问题。
               </p>
             </div>
           </div>
@@ -114,9 +114,9 @@ const FeaturesBento = () => {
                 <span className="px-3 py-1 rounded bg-green-500/20 text-green-400 text-xs font-bold font-mono">良好</span>
                 <span className="px-3 py-1 rounded bg-blue-500/20 text-blue-400 text-xs font-bold font-mono">简单</span>
               </div>
-              <h3 className="text-2xl font-bold mb-3 text-white">碎片闪卡，真正“无痛”记忆</h3>
+              <h3 className="text-2xl font-bold mb-3 text-white">顺其自然的“心流”记忆法</h3>
               <p className="text-white/60 leading-relaxed max-w-md">
-                抛弃一切必须强制打卡的紧迫感。利用上班喝咖啡的间隙，随意切出卡盘点击<strong className="text-white">随机播放</strong>。依托于背后的科学算法，你只需顺着直觉反馈，程序就会在关键时刻帮你彻底转化掉那些“看着眼熟又忘了”的单词。
+                没有任何硬性的打卡任务。软件会在背后用聪明的记忆算法默默记录。当你喝咖啡或碎片休息时点个“随机播放”，它就会在最刚好的时刻帮你复习那些“看着眼熟却想死活不起来”的生词。
               </p>
             </div>
           </div>

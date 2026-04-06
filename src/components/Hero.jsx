@@ -81,7 +81,7 @@ const Hero = () => {
         </h1>
 
         <p className="text-lg md:text-xl text-white/50 max-w-2xl mb-12 font-medium leading-relaxed">
-          这是一款为职场人量身打造的急速<strong className="text-white">英语翻译与查词</strong>工具。专门解决工作中“看着眼熟却死活想不起意思”的生词痛点。无需切换窗口，选中长难句即刻秒翻，遇到生词自动打包装进词库。让你在没有任何“背单词打卡”压力的情况下，自然提升词汇量。
+          本次 V1.6.0 是一次里程碑式的焕新。我们将产品正式更名为 <strong className="text-white">识光 (Lumina)</strong>。抛弃了复杂的功能堆砌，让“查生词”和“背单词”这件痛苦的事彻底绝无仅有地隐匿于你的日常工作流中。
         </p>
 
         {/* Dynamic CTA Buttons based on OS */}
