@@ -25,9 +25,9 @@ const Hero = () => {
         </div>
 
         <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight leading-[1.1] mb-8 text-transparent bg-clip-text bg-gradient-to-br from-white to-white/60">
-          边工作边积累的<br />
+          工作中无意识积累词汇量<br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-neon-purple mt-2 block pb-2">
-            沉浸式英语翻译辞典
+            沉浸式英语即时翻译助手
           </span>
         </h1>
 
