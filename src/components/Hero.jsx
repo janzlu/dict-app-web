@@ -15,6 +15,13 @@ const Hero = () => {
 
   return (
     <section className="relative w-full min-h-screen flex flex-col items-center justify-center overflow-hidden pt-20 pb-32">
+      {/* Dynamic Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center opacity-30 pointer-events-none transition-opacity duration-1000 ease-in-out"
+        style={{ backgroundImage: "url('/assets/hero_bg.png')", filter: "blur(2px)", transform: "scale(1.05)" }}
+      ></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-void/5 to-void pointer-events-none"></div>
+
       {/* Background Neon Blob (Glassmorphism Light Source) */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-neon-purple/20 rounded-full blur-[120px] pointer-events-none"></div>
 
