@@ -71,7 +71,7 @@ const Hero = () => {
       <div className="relative z-10 flex flex-col items-center text-center max-w-4xl px-4">
         
         <div className="inline-block mb-4 px-3 py-1 rounded-full border border-white/10 bg-white/5 text-xs font-medium tracking-wide text-neon-blue uppercase backdrop-blur-md">
-          v1.6.0 正式版现已发布
+          v1.7.0 本地离线版现已发布
         </div>
 
         <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight leading-[1.1] mb-8 text-transparent bg-clip-text bg-gradient-to-br from-white to-white/60">
@@ -82,7 +82,7 @@ const Hero = () => {
         </h1>
 
         <p className="text-lg md:text-xl text-white/50 max-w-2xl mb-12 font-medium leading-relaxed">
-          本次 V1.6.0 是一次里程碑式的焕新。我们将产品正式更名为 <strong className="text-white">识光 (Lumina)</strong>。抛弃了复杂的功能堆砌，让“查生词”和“背单词”这件痛苦的事彻底绝无仅有地隐匿于你的日常工作流中。
+          本次 V1.7.0 是一场由表及里的视觉跨代焕新。从 Apple 式纯净沉浸的强对比“双轨光影系统”，到完全不占用工作心流的「自动极客轮播」屏保，Lumina 正加速进化为终极离线记忆中枢。
         </p>
 
         {/* Dynamic CTA Buttons based on OS */}

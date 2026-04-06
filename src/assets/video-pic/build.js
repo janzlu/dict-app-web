@@ -7,7 +7,7 @@ ffmpeg.setFfmpegPath(ffmpegInstaller.path);
 
 const dir = __dirname;
 const files = fs.readdirSync(dir)
-  .filter(f => f.endsWith('.png'))
+  .filter(f => f.toLowerCase().startsWith('screenshot') && f.endsWith('.png'))
   .sort();
 
 if (files.length === 0) {
@@ -35,7 +35,7 @@ files.forEach(f => {
 let complexFilter = [];
 for (let i = 0; i < files.length; i++) {
   complexFilter.push(
-    `[${i}:v]scale=${W}:${H}:force_original_aspect_ratio=decrease,pad=${W}:${H}:(ow-iw)/2:(oh-ih)/2,setsar=1,format=yuv420p[v${i}]`
+    `[${i}:v]scale=${W}:${H}:force_original_aspect_ratio=decrease,pad=${W}:${H}:trunc((ow-iw)/2):trunc((oh-ih)/2),setsar=1,format=yuv420p[v${i}]`
   );
 }
 
