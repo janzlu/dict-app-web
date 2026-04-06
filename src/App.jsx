@@ -1,5 +1,6 @@
 import Hero from './components/Hero'
 import FeaturesBento from './components/FeaturesBento'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       {/* Target area for Phase 1 & 2 insertion */}
       <Hero />
       <FeaturesBento />
+      <Footer />
     </div>
   )
 }
