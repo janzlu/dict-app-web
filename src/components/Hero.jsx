@@ -32,8 +32,7 @@ const Hero = () => {
         </h1>
 
         <p className="text-lg md:text-xl text-white/50 max-w-2xl mb-12 font-medium leading-relaxed">
-          抛弃传统背单词软件的冗杂。全局 3000 字神经直译嗅探、双核降级容灾、
-          SM-2 降维记忆计算。在暗夜中，一切自然发生。
+          告别臃肿的传统词典应用。选中长条段落瞬间翻译，无惧国内断网，外加科学的记忆法帮你真正记住生词。在这款极简的桌面工具里，你可以专注于阅读本身。
         </p>
 
         {/* Dynamic CTA Buttons based on OS */}
@@ -62,7 +61,7 @@ const Hero = () => {
           </a>
 
           <a href="#features" className="px-8 py-4 rounded-xl glass-panel text-white font-medium hover:bg-white/10 transition-colors duration-300">
-            了解硬核架构
+            了解核心亮点
           </a>
         </div>
       </div>
