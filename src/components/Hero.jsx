@@ -43,23 +43,24 @@ const Hero = () => {
       className="relative w-full min-h-[100vh] flex flex-col items-center justify-center overflow-hidden pt-20 pb-32"
     >
       {/* ================= BACKGROUND LAYERS ================= */}
-      <div className="absolute inset-0 -z-10 pointer-events-none overflow-hidden">
+      <div className="absolute inset-0 -z-10 pointer-events-none overflow-hidden bg-[#0a0a0f]">
         {/* Dynamic Background Image Parallax */}
         <motion.div 
-          className="absolute w-[110%] h-[110%] -top-[5%] -left-[5%] bg-cover bg-center opacity-30"
+          className="absolute w-[110%] h-[110%] -top-[5%] -left-[5%] bg-cover bg-center opacity-80"
           style={{ 
             backgroundImage: "url('/assets/hero_bg.png')", 
-            filter: "blur(2px)",
             x: bgX,
             y: bgY
           }}
         ></motion.div>
-        <div className="absolute inset-0 bg-gradient-to-b from-void/5 to-void"></div>
+        
+        {/* Soft edge blend overlay to avoid hard masking the image */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/40 to-[#050505]"></div>
 
-        {/* Background Neon Blob Following Mouse */}
+        {/* Background Neon Blob Following Mouse (Placed behind text but over image) */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
           <motion.div 
-            className="w-[600px] h-[600px] bg-neon-purple/20 rounded-full blur-[120px]"
+            className="w-[600px] h-[600px] bg-neon-purple/20 rounded-full blur-[100px] mix-blend-screen"
             style={{ x: blobX, y: blobY }}
           ></motion.div>
         </div>
