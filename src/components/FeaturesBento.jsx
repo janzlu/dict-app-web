@@ -20,10 +20,9 @@ const FeaturesBento = () => {
           <div className="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 bg-neon-blue/10 rounded-full blur-3xl group-hover:bg-neon-blue/20 transition-all duration-700"></div>
           
           <div className="relative z-10 h-full flex flex-col justify-end pt-32">
-            <h3 className="text-2xl font-bold mb-3 text-white">长难句一键秒翻 (无缝阅读)</h3>
+            <h3 className="text-2xl font-bold mb-3 text-white">即点即译，生词无感入库</h3>
             <p className="text-white/60 leading-relaxed max-w-md">
-              无论多长的英文段落，甚至是中英混排的文章，只要轻轻复制，悬浮窗都会<strong className="text-white">自动跳过中文，仅翻译外语部分。</strong>
-              它甚至会自动帮你把断行的烂排版铺平。全程不干扰你的视线，保护你的阅读心流。
+              无论多长的中英混排文章，或是工作中遇到的晦涩术语，在这个极轻的悬浮窗里查过之后，如果是生词将<strong className="text-white">全自动悄悄进入你的个人词库</strong>。曾经查过的熟词也能瞬时调出记录，将查阅、翻译与捕获无缝合一。
             </p>
           </div>
         </motion.div>
@@ -78,9 +77,9 @@ const FeaturesBento = () => {
               <span className="px-3 py-1 rounded bg-green-500/20 text-green-400 text-xs font-bold font-mono">良好</span>
               <span className="px-3 py-1 rounded bg-blue-500/20 text-blue-400 text-xs font-bold font-mono">简单</span>
             </div>
-            <h3 className="text-2xl font-bold mb-3 text-white">战胜遗忘的记忆曲线</h3>
+            <h3 className="text-2xl font-bold mb-3 text-white">碎片闪卡，真正“无痛”记忆</h3>
             <p className="text-white/60 leading-relaxed max-w-md">
-              内置了世界闻名的 SuperMemo-2 科学复习体系。你可以用顺滑的拖拽手势给小卡片进行反馈打分，程序会自动计算出最适合你的“下一次复习节拍”，不浪费一星半点时间去复习那些你已经掌握的词。
+              抛弃一切必须强制打卡的紧迫感。利用上班喝咖啡的间隙，随意切出卡盘点击<strong className="text-white">随机播放</strong>。依托于背后的科学算法，你只需顺着直觉反馈，程序就会在关键时刻帮你彻底转化掉那些“看着眼熟又忘了”的单词。
             </p>
           </div>
         </motion.div>
