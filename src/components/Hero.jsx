@@ -76,7 +76,7 @@ const Hero = () => {
         <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight leading-[1.1] mb-8 text-transparent bg-clip-text bg-gradient-to-br from-white to-white/60">
           工作中无意识积累词汇量<br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-neon-purple mt-2 block pb-2">
-            沉浸式英语即时翻译助手
+            识光 Lumina 极速英语翻译助手
           </span>
         </h1>
 

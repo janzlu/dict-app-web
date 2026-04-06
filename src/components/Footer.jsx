@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 mb-12 relative p-2">
         <div className="md:col-span-2">
           <h3 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-white/60 mb-4 inline-block">
-            沉浸式英语翻译助手
+            识光 Lumina
           </h3>
           <p className="text-white/40 text-sm leading-relaxed max-w-sm">
             这是一款专门为职场人士量身打造的急速英语翻译与查词工具。告别“看着眼熟却死活想不起意思”的生词痛点，在无痛查阅中自然提升外语词汇量。
@@ -45,7 +45,7 @@ const Footer = () => {
       </div>
       
       <div className="max-w-6xl mx-auto px-4 pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between text-xs text-white/30">
-        <p>© {new Date().getFullYear()} Immersive Dictionary App. All Rights Reserved.</p>
+        <p>© {new Date().getFullYear()} 识光 Lumina. All Rights Reserved.</p>
         <p className="mt-2 md:mt-0">Crafted with passion using React & Tailwind V4</p>
       </div>
     </footer>
