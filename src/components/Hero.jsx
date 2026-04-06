@@ -1,7 +1,21 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
+import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 
 const Hero = () => {
   const [os, setOs] = useState('Windows');
+  const heroRef = useRef(null);
+
+  // Mouse parallax state
+  const mouseX = useMotionValue(0);
+  const mouseY = useMotionValue(0);
+
+  const smoothMouseX = useSpring(mouseX, { stiffness: 50, damping: 20 });
+  const smoothMouseY = useSpring(mouseY, { stiffness: 50, damping: 20 });
+
+  const bgX = useTransform(smoothMouseX, [-0.5, 0.5], ["2%", "-2%"]); // Move opposite to mouse
+  const bgY = useTransform(smoothMouseY, [-0.5, 0.5], ["2%", "-2%"]);
+  const blobX = useTransform(smoothMouseX, [-0.5, 0.5], ["-30%", "30%"]); // Follow mouse
+  const blobY = useTransform(smoothMouseY, [-0.5, 0.5], ["-30%", "30%"]);
 
   useEffect(() => {
     // Client-side execution logic for OS checking
@@ -13,17 +27,40 @@ const Hero = () => {
     }
   }, []);
 
+  const handleMouseMove = (e) => {
+    if (!heroRef.current) return;
+    const rect = heroRef.current.getBoundingClientRect();
+    const x = (e.clientX - rect.left) / rect.width - 0.5;
+    const y = (e.clientY - rect.top) / rect.height - 0.5;
+    mouseX.set(x);
+    mouseY.set(y);
+  };
+
   return (
-    <section className="relative w-full min-h-screen flex flex-col items-center justify-center overflow-hidden pt-20 pb-32">
-      {/* Dynamic Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center opacity-30 pointer-events-none transition-opacity duration-1000 ease-in-out"
-        style={{ backgroundImage: "url('/assets/hero_bg.png')", filter: "blur(2px)", transform: "scale(1.05)" }}
-      ></div>
+    <section 
+      ref={heroRef}
+      onMouseMove={handleMouseMove}
+      className="relative w-full min-h-[100vh] flex flex-col items-center justify-center overflow-hidden pt-20 pb-32"
+    >
+      {/* Dynamic Background Image Parallax */}
+      <motion.div 
+        className="absolute w-[110%] h-[110%] -top-[5%] -left-[5%] bg-cover bg-center opacity-30 pointer-events-none"
+        style={{ 
+          backgroundImage: "url('/assets/hero_bg.png')", 
+          filter: "blur(2px)",
+          x: bgX,
+          y: bgY
+        }}
+      ></motion.div>
       <div className="absolute inset-0 bg-gradient-to-b from-void/5 to-void pointer-events-none"></div>
 
-      {/* Background Neon Blob (Glassmorphism Light Source) */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-neon-purple/20 rounded-full blur-[120px] pointer-events-none"></div>
+      {/* Background Neon Blob Following Mouse */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none">
+        <motion.div 
+          className="w-[600px] h-[600px] bg-neon-purple/20 rounded-full blur-[120px]"
+          style={{ x: blobX, y: blobY }}
+        ></motion.div>
+      </div>
 
       <div className="relative z-10 flex flex-col items-center text-center max-w-4xl px-4">
         
