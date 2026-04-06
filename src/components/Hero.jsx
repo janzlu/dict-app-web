@@ -70,7 +70,7 @@ const Hero = () => {
       <div className="relative z-10 flex flex-col items-center text-center max-w-4xl px-4">
         
         <div className="inline-block mb-4 px-3 py-1 rounded-full border border-white/10 bg-white/5 text-xs font-medium tracking-wide text-neon-blue uppercase backdrop-blur-md">
-          v1.5.0 正式版现已发布
+          v1.6.0 正式版现已发布
         </div>
 
         <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight leading-[1.1] mb-8 text-transparent bg-clip-text bg-gradient-to-br from-white to-white/60">
