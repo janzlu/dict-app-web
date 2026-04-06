@@ -25,14 +25,14 @@ const Hero = () => {
         </div>
 
         <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight leading-[1.1] mb-8 text-transparent bg-clip-text bg-gradient-to-br from-white to-white/60">
-          无压力自然积累的<br />
+          边工作边积累的<br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-neon-purple mt-2 block pb-2">
-            沉浸式工作辞典
+            沉浸式英语翻译辞典
           </span>
         </h1>
 
         <p className="text-lg md:text-xl text-white/50 max-w-2xl mb-12 font-medium leading-relaxed">
-          专门解决工作中“看着眼熟却死活想不起意思”的生词痛点。无需切换窗口，选中即翻，生词自动入库。让你在没有任何“背单词打卡”压力的情况下，边日常工作边疯狂提升词汇量。
+          这是一款为职场人量身打造的急速<strong className="text-white">英语翻译与查词</strong>工具。专门解决工作中“看着眼熟却死活想不起意思”的生词痛点。无需切换窗口，选中长难句即刻秒翻，遇到生词自动打包装进词库。让你在没有任何“背单词打卡”压力的情况下，自然提升词汇量。
         </p>
 
         {/* Dynamic CTA Buttons based on OS */}
