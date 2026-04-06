@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 const FeaturesBento = () => {
   return (
     <section id="features" className="py-24 relative z-10 overflow-hidden">
-      {/* Ambient Background Grid & Glows */}
-      <div className="absolute inset-0 pointer-events-none z-0">
+      {/* ================= BACKGROUND LAYERS ================= */}
+      <div className="absolute inset-0 -z-10 pointer-events-none overflow-hidden">
         <div 
           className="absolute inset-0"
           style={{ 
@@ -16,13 +16,15 @@ const FeaturesBento = () => {
         <div className="absolute top-1/4 -left-[200px] w-[500px] h-[500px] bg-neon-blue/15 rounded-full blur-[120px]"></div>
         <div className="absolute bottom-1/4 -right-[200px] w-[600px] h-[600px] bg-neon-purple/15 rounded-full blur-[120px]"></div>
       </div>
+      {/* ================= END BACKGROUND ================= */}
 
+      {/* ================= CONTENT ================= */}
       <div className="text-center mb-16 px-4 relative z-10">
         <h2 className="text-3xl md:text-5xl font-bold mb-4 tracking-tight">强大不止于表，<span className="text-neon-blue">更懂阅读的你。</span></h2>
         <p className="text-white/50 text-lg max-w-xl mx-auto">我们厌倦了“花里胡哨的弹窗”。在此为你呈现的是一款专注阅读、极度安静的强大辅助工具。</p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto px-4">
+      <div className="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto px-4">
         
         {/* Core Feature 1: Engine (Span 2) */}
         <motion.div 

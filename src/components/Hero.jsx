@@ -42,27 +42,32 @@ const Hero = () => {
       onMouseMove={handleMouseMove}
       className="relative w-full min-h-[100vh] flex flex-col items-center justify-center overflow-hidden pt-20 pb-32"
     >
-      {/* Dynamic Background Image Parallax */}
-      <motion.div 
-        className="absolute w-[110%] h-[110%] -top-[5%] -left-[5%] bg-cover bg-center opacity-30 pointer-events-none"
-        style={{ 
-          backgroundImage: "url('/assets/hero_bg.png')", 
-          filter: "blur(2px)",
-          x: bgX,
-          y: bgY
-        }}
-      ></motion.div>
-      <div className="absolute inset-0 bg-gradient-to-b from-void/5 to-void pointer-events-none"></div>
-
-      {/* Background Neon Blob Following Mouse */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none z-0">
+      {/* ================= BACKGROUND LAYERS ================= */}
+      <div className="absolute inset-0 -z-10 pointer-events-none overflow-hidden">
+        {/* Dynamic Background Image Parallax */}
         <motion.div 
-          className="w-[600px] h-[600px] bg-neon-purple/20 rounded-full blur-[120px] pointer-events-none"
-          style={{ x: blobX, y: blobY }}
+          className="absolute w-[110%] h-[110%] -top-[5%] -left-[5%] bg-cover bg-center opacity-30"
+          style={{ 
+            backgroundImage: "url('/assets/hero_bg.png')", 
+            filter: "blur(2px)",
+            x: bgX,
+            y: bgY
+          }}
         ></motion.div>
-      </div>
+        <div className="absolute inset-0 bg-gradient-to-b from-void/5 to-void"></div>
 
-      <div className="relative z-20 flex flex-col items-center text-center max-w-4xl px-4 pointer-events-auto">
+        {/* Background Neon Blob Following Mouse */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+          <motion.div 
+            className="w-[600px] h-[600px] bg-neon-purple/20 rounded-full blur-[120px]"
+            style={{ x: blobX, y: blobY }}
+          ></motion.div>
+        </div>
+      </div>
+      {/* ================= END BACKGROUND ================= */}
+
+      {/* ================= CONTENT ================= */}
+      <div className="relative z-10 flex flex-col items-center text-center max-w-4xl px-4">
         
         <div className="inline-block mb-4 px-3 py-1 rounded-full border border-white/10 bg-white/5 text-xs font-medium tracking-wide text-neon-blue uppercase backdrop-blur-md">
           v1.5.0 正式版现已发布
