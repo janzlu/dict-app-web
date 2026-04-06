@@ -38,7 +38,12 @@ const Hero = () => {
 
         {/* Dynamic CTA Buttons based on OS */}
         <div className="flex flex-col sm:flex-row items-center gap-4">
-          <button className="group relative flex items-center gap-3 px-8 py-4 rounded-xl bg-white text-black font-semibold text-lg hover:bg-gray-200 transition-all duration-300 transform hover:scale-105 active:scale-95 shadow-[0_0_40px_rgba(255,255,255,0.3)]">
+          <a 
+            href="https://github.com/janzlu/my-dictionary/releases/latest" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group relative flex items-center gap-3 px-8 py-4 rounded-xl bg-white text-black font-semibold text-lg hover:bg-gray-200 transition-all duration-300 transform hover:scale-105 active:scale-95 shadow-[0_0_40px_rgba(255,255,255,0.3)]"
+          >
             {os === 'Mac' ? (
               <svg className="w-6 h-6" viewBox="0 0 384 512" fill="currentColor">
                  {/* Apple Icon */}
@@ -54,7 +59,7 @@ const Hero = () => {
             
             {/* Subtle glow behind the button */}
             <div className="absolute inset-0 rounded-xl bg-white/20 blur opacity-0 group-hover:opacity-100 transition duration-300"></div>
-          </button>
+          </a>
 
           <a href="#features" className="px-8 py-4 rounded-xl glass-panel text-white font-medium hover:bg-white/10 transition-colors duration-300">
             了解硬核架构
