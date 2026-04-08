@@ -70,23 +70,23 @@ const FeaturesBento = () => {
           </div>
         </motion.div>
 
-        {/* Core Feature 3: CRDT Sync (Span 1) */}
+        {/* Core Feature 3: Analytics Cockpit (Span 1) */}
         <motion.div 
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
           className="md:col-span-1 glass-panel rounded-3xl p-10 relative overflow-hidden group hover:border-white/20 transition-all duration-500">
-          <div className="absolute bottom-0 right-0 -mr-10 -mb-10 w-48 h-48 bg-white/5 rounded-full blur-3xl group-hover:bg-white/10 transition-all duration-700"></div>
+          <div className="absolute bottom-0 right-0 -mr-10 -mb-10 w-48 h-48 bg-neon-purple/10 rounded-full blur-3xl group-hover:bg-neon-purple/20 transition-all duration-700"></div>
           
           <div className="relative z-10 h-full flex flex-col justify-between">
-            <svg className="w-16 h-16 text-white opacity-50 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
+            <svg className="w-16 h-16 text-neon-purple opacity-50 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
             </svg>
             <div className="mt-16">
-              <h3 className="text-xl font-bold mb-3 text-white">全新极简 UI 与品牌升级</h3>
+              <h3 className="text-xl font-bold mb-3 text-white">全息数据仪表盘</h3>
               <p className="text-white/60 leading-relaxed text-sm">
-                全面启用了最新的紫电光晕标识（Lumina 寓意微光与认知），支持高度流畅的暗黑模式，并彻底修复了此前干扰交互的光源层问题。
+                新增 365 天记忆热力图与 7 日压力统计。背后的 SQLite 原子级追踪让每一滴汗水都肉眼可见，把枯燥的背词变成赛博朋克级的成就收集。
               </p>
             </div>
           </div>
@@ -109,14 +109,12 @@ const FeaturesBento = () => {
             
             <div className="mt-16">
               <div className="flex items-center gap-4 mb-4 opacity-70">
-                <span className="px-3 py-1 rounded bg-red-500/20 text-red-400 text-xs font-bold font-mono">忘记</span>
-                <span className="px-3 py-1 rounded bg-orange-500/20 text-orange-400 text-xs font-bold font-mono">困难</span>
-                <span className="px-3 py-1 rounded bg-green-500/20 text-green-400 text-xs font-bold font-mono">良好</span>
-                <span className="px-3 py-1 rounded bg-blue-500/20 text-blue-400 text-xs font-bold font-mono">简单</span>
+                <span className="px-3 py-1 rounded bg-red-500/20 text-red-400 text-xs font-bold font-mono">Space 翻面</span>
+                <span className="px-3 py-1 rounded bg-blue-500/20 text-blue-400 text-xs font-bold font-mono">1/2/3/4 指控评星</span>
               </div>
-              <h3 className="text-2xl font-bold mb-3 text-white">顺其自然的“心流”记忆法</h3>
+              <h3 className="text-2xl font-bold mb-3 text-white">键盘大师：零中断背词神经系统</h3>
               <p className="text-white/60 leading-relaxed max-w-md">
-                没有任何硬性的打卡任务。软件会在背后用聪明的记忆算法默默记录。当你喝咖啡或碎片休息时点个“随机播放”，它就会在最刚好的时刻帮你复习那些“看着眼熟却想死活不起来”的生词。
+                彻底摆脱鼠标！在 V1.8.0 的暗黑闪卡模式下，您可以像黑客敲代码一样，通过左手区的指位物理反馈进行快速评分。盲控算法评估，让您的记忆心流毫无阻滞。
               </p>
             </div>
           </div>
