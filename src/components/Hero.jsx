@@ -88,7 +88,7 @@ const Hero = () => {
         {/* Dynamic CTA Buttons based on OS */}
         <div className="flex flex-col sm:flex-row items-center gap-4">
           <a 
-            href="https://github.com/janzlu/my-dictionary/releases/latest" 
+            href="https://github.com/janzlu/dict-app/releases/latest" 
             target="_blank"
             rel="noopener noreferrer"
             className="group relative flex items-center gap-3 px-8 py-4 rounded-xl bg-white text-black font-semibold text-lg hover:bg-gray-200 transition-all duration-300 transform hover:scale-105 active:scale-95 shadow-[0_0_40px_rgba(255,255,255,0.3)]"
