@@ -120,6 +120,50 @@ const FeaturesBento = () => {
           </div>
         </motion.div>
 
+        {/* Core Feature 5: OTA Update (Span 2) */}
+        <motion.div 
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.7, ease: "easeOut", delay: 0.4 }}
+          className="md:col-span-2 glass-panel rounded-3xl p-10 relative overflow-hidden group hover:border-white/20 transition-all duration-500">
+          <div className="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 bg-fuchsia-500/10 rounded-full blur-3xl group-hover:bg-fuchsia-500/20 transition-all duration-700"></div>
+          
+          <div className="relative z-10 h-full flex flex-col justify-between">
+            <svg className="w-16 h-16 text-fuchsia-500 opacity-50 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
+            </svg>
+            <div className="mt-16">
+              <h3 className="text-2xl font-bold mb-3 text-white">OTA 静默引擎：让进化悄无声息</h3>
+              <p className="text-white/60 leading-relaxed max-w-md">
+                告别繁琐的手动跳转与下载包替换。搭载全新底层活塞式自驱动器，应用每次启动都能悄悄巡检云端，并在必要时呈现不侵入视觉的系统级防呆升级推送。
+              </p>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Core Feature 6: Zero Server Sync (Span 1) */}
+        <motion.div 
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.7, ease: "easeOut", delay: 0.5 }}
+          className="md:col-span-1 glass-panel rounded-3xl p-10 relative overflow-hidden group hover:border-white/20 transition-all duration-500">
+          <div className="absolute top-0 left-0 -ml-10 -mt-10 w-48 h-48 bg-cyan-400/10 rounded-full blur-3xl group-hover:bg-cyan-400/20 transition-all duration-700"></div>
+          
+          <div className="relative z-10 h-full flex flex-col justify-between">
+            <svg className="w-16 h-16 text-cyan-400 opacity-50 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z" />
+            </svg>
+            <div className="mt-16">
+              <h3 className="text-xl font-bold mb-3 text-white">免服务云盘跨端快传</h3>
+              <p className="text-white/60 leading-relaxed text-sm">
+                无需高昂的高配服务器，利用现成的各种网盘通道，瞬间实现全设备双向无损词库与算法状态的安全级合并。
+              </p>
+            </div>
+          </div>
+        </motion.div>
+
       </div>
     </section>
   );

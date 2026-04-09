@@ -71,7 +71,7 @@ const Hero = () => {
       <div className="relative z-10 flex flex-col items-center text-center max-w-4xl px-4">
         
         <div className="inline-block mb-4 px-3 py-1 rounded-full border border-white/10 bg-white/5 text-xs font-medium tracking-wide text-neon-blue uppercase backdrop-blur-md">
-          v1.8.0 全息数据版现已发布
+          v1.8.2 活塞引擎 / 全自动更新版 现已发布
         </div>
 
         <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight leading-[1.1] mb-8 text-transparent bg-clip-text bg-gradient-to-br from-white to-white/60">
@@ -82,7 +82,7 @@ const Hero = () => {
         </h1>
 
         <p className="text-lg md:text-xl text-white/50 max-w-2xl mb-12 font-medium leading-relaxed">
-          本次 V1.8.0 是一场由外及里的“数据觉醒”。从极其强劲的「ECharts 全息记忆仪表盘」，到完全脱离鼠标束缚的「零中断击键神经系统」，Lumina 正以数据主权与物理效率重新定义极客学习中枢。
+          本次 V1.8.2 迎来了极其顺滑的「OTA 静默自更新」引擎并重构了漏斗式弹窗调度。从此告别繁琐的手动下载与覆盖，Lumina 将在不干扰您的任何一秒钟内，悄无声息地自我进化至最强形态。
         </p>
 
         {/* Dynamic CTA Buttons based on OS */}
